@@ -20,7 +20,7 @@
       };
       caddyWithPlugins = pkgs.callPackage ./caddy-with-plugins.nix { };
     in
-    {
+    rec {
       packages.default = caddyWithPlugins;
       packages.caddyWithCloudflare = caddyWithPlugins {
         caddyModules =
@@ -32,6 +32,10 @@
             }
           ];
         vendorHash = import ./hash.nix;
+      };
+
+      overlays.default = final: prev: {
+        caddyWithCloudflare = packages.caddyWithCloudflare;
       };
     });
 }
