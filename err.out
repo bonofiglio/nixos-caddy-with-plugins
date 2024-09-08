@@ -1,9 +1,0 @@
-warning: Git tree '/Users/daniel/repos/nixos-caddy-with-plugins' is dirty
-these 2 derivations will be built:
-  /nix/store/asgdp2f0qw3sxpcbp0ygradafcya5qfx-caddy-with-plugins-2.8.4-go-modules.drv
-  /nix/store/qzzxffby33bsb728bn0q6j5mlzkfdi0v-caddy-with-plugins-2.8.4.drv
-building '/nix/store/asgdp2f0qw3sxpcbp0ygradafcya5qfx-caddy-with-plugins-2.8.4-go-modules.drv'...
-error: hash mismatch in fixed-output derivation '/nix/store/asgdp2f0qw3sxpcbp0ygradafcya5qfx-caddy-with-plugins-2.8.4-go-modules.drv':
-         specified: sha256-1Api8bBZJ1/oYk4ZGIiwWCSraLzK9L+hsKXkFtk6iVM=
-            got:    sha256-fTcMtg5GGEgclIwJCav0jjWpqT+nKw2OF1Ow0MEEitk=
-error: 1 dependencies of derivation '/nix/store/qzzxffby33bsb728bn0q6j5mlzkfdi0v-caddy-with-plugins-2.8.4.drv' failed to build
